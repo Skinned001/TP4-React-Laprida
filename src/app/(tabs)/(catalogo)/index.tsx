@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { COLORES, ESPACIADOS, TAMANIOS } from '@/constants/tema';
 
-export default function PantallaInicial() {
+export default function PantallaCatalogo() {
   return (
     <View style={estilos.contenedor}>
-      <Text style={estilos.titulo}>Biblioteca IPF</Text>
+      <Text style={estilos.titulo}>Catálogo</Text>
     </View>
   );
 }
