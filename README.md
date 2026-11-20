@@ -1,56 +1,43 @@
-# Welcome to your Expo app 👋
+# Biblioteca IPF — Trabajo Práctico N° 4
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicación móvil desarrollada con **React Native**, **Expo (SDK 58)**, **TypeScript** y **Expo Router** para el Trabajo Práctico N° 4 de *Taller Complementario – React Native II* (Tecnicatura Superior en Desarrollo de Software Multiplataforma · Instituto Politécnico Formosa).
 
-## Get started
+## Descripción del sistema
 
-1. Install dependencies
+La aplicación permite a estudiantes consultar el catálogo de la biblioteca, buscar libros por título o autor, escanear el código de barras EAN-13 (o ingresar el ISBN manualmente), realizar reservas o sumarse a listas de espera, gestionar sus préstamos con recordatorios locales y acceder al mostrador del personal para entregar libros respetando el orden de llegada.
+
+## Requisitos previos
+
+- Node.js (v18 o superior)
+- npm
+- Aplicación **Expo Go** instalada en un teléfono Android o iOS (en la misma red Wi-Fi que la computadora)
+
+## Cómo ejecutar el proyecto
+
+1. Instalar las dependencias:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Iniciar el servidor de desarrollo de Expo:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Escanear el código QR mostrado en la terminal con **Expo Go** (Android) o la app Cámara (iOS).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Verificación de código
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Verificación de tipos con TypeScript:
 
-## Get a fresh project
+  ```bash
+  npx tsc --noEmit
+  ```
 
-When you're ready, run:
+- Verificación de estilo y reglas con ESLint:
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+  ```bash
+  npx expo lint
+  ```
